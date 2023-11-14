@@ -89,12 +89,6 @@
 
 
                             <nav class="nav">
-                                <a href="" class="nav__link">
-                                    <span>Контакты</span>
-                                </a>
-                                <a href="" class="nav__link">
-                                    <span>3D Конструктор</span>
-                                </a>
                                 <div class="nav__item _menu-item">
                                     <div class="nav__show">
                                         <span>О компании</span>
@@ -137,6 +131,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="" class="nav__link">
+                                    <span>Контакты</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>3D Конструктор</span>
+                                </a>
                                 <a href="" class="nav__link _black medium-text">
                                     <span>Скачать каталог</span>
                                 </a>
@@ -646,12 +646,13 @@
                                 iconLayout: 'default#image',
                                 iconImageHref: "img/mark2.svg",
                                 iconImageSize: [30, 30],
+                                iconImageOffset: [-15, -15]
                             });
                             myMap.geoObjects.add(placeMark);
                         })
 
 
-
+                        myMap.objectManager.objects.options.set('hideIconOnBalloonOpen', false);
 
 
                     }
