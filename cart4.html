@@ -700,53 +700,135 @@
                         </div>
                         <div class="cart__sidebar">
                             <div class="cart-order">
-                                <div class="promo-code">
-                                    <input type="text" placeholder="Промокод">
-                                    <button class="promo-code__btn">
-                                        <span>Применить</span>
-                                    </button>
-                                </div>
-                                <div class="promo-code">
-                                    <input type="text" placeholder="Промокод">
-                                    <div class="promo-code__success">
-                                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 7L6.66667 12L16 2" stroke="#24A236" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-                                        </svg>
-                                        <span>Промокод принят</span>
+                                <div class="cart-order__view _view1 _active">
+                                    <div class="promo-code">
+                                        <input type="text" placeholder="Промокод">
+                                        <button class="promo-code__btn">
+                                            <span>Применить</span>
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="promo-code">
-                                    <input class="_error" type="text" placeholder="Промокод">
-                                    <div class="promo-code__error">
-                                        <span>Промокод не существует</span>
-                                    </div>
-                                </div>
-                                <div class="order-products">
-                                    <div class="text24 text22-tablet bold-text">Ваш заказ</div>
-                                    <div class="order-products__items">
-                                        <div class="order-products__item">
-                                            <div class="order-products__title">Сумма:</div>
-                                            <div class="order-products__desc">176 457 ₽</div>
-                                        </div>
-                                        <div class="order-products__item">
-                                            <div class="order-products__title">Вес:</div>
-                                            <div class="order-products__desc">1003 кг.</div>
-                                        </div>
-                                        <div class="order-products__item">
-                                            <div class="order-products__title">Скидка:</div>
-                                            <div class="order-products__desc _red">0 ₽</div>
-                                        </div>
-                                        <div class="order-products__item _sum">
-                                            <div class="order-products__title">Итого:</div>
-                                            <div class="order-products__desc">179 957 ₽</div>
+                                    <div class="promo-code">
+                                        <input type="text" placeholder="Промокод">
+                                        <div class="promo-code__success">
+                                            <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 7L6.66667 12L16 2" stroke="#24A236" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                                            </svg>
+                                            <span>Промокод принят</span>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="promo-code">
+                                        <input class="_error" type="text" placeholder="Промокод">
+                                        <div class="promo-code__error">
+                                            <span>Промокод не существует</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-products">
+                                        <div class="text24 text22-tablet bold-text">Ваш заказ</div>
+                                        <div class="order-products__items">
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Сумма:</div>
+                                                <div class="order-products__desc">176 457 ₽</div>
+                                            </div>
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Вес:</div>
+                                                <div class="order-products__desc">1003 кг.</div>
+                                            </div>
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Скидка:</div>
+                                                <div class="order-products__desc _red">0 ₽</div>
+                                            </div>
+                                            <div class="order-products__item _sum">
+                                                <div class="order-products__title">Итого:</div>
+                                                <div class="order-products__desc">179 957 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <div class="cart-order__bottom">
-                                    <button class="cart-order__btn m-btn m-btn-black">
-                                        <span>Оформить заказ</span>
-                                    </button>
+                                    <div class="cart-order__bottom">
+                                        <button class="_make-order cart-order__btn m-btn m-btn-black">
+                                            <span>Оформить заказ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart-order__view _view2">
+                                    <div class="cart-delivery">
+                                        <div class="cart-delivery__items">
+                                            <div class="cart-delivery__item">
+                                                <div class="m-radio">
+                                                    <input type="radio" name="delivery">
+                                                    <label><span>Доставка транспортной компанией</span></label>
+                                                </div>
+                                                <div class="text16">+3500 ₽</div>
+                                            </div>
+                                            <div class="cart-delivery__item">
+                                                <div class="m-radio">
+                                                    <input checked type="radio" name="delivery">
+                                                    <label><span>Самовывоз</span></label>
+                                                </div>
+                                                <div class="text16">0 ₽</div>
+                                            </div>
+                                        </div>
+                                        <fieldset class="cart-delivery__select fg">
+                                            <select>
+                                                <option selected>Выберите точку для самовывоза</option>
+                                                <option>Точка номер один</option>
+                                                <option>Точка номер два</option>
+                                                <option>Точка номер три</option>
+                                                <option>Точка номер четыре</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="order-products">
+                                        <div class="text24 text22-tablet bold-text">Ваш заказ</div>
+                                        <div class="order-products__items">
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Сумма:</div>
+                                                <div class="order-products__desc">176 457 ₽</div>
+                                            </div>
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Вес:</div>
+                                                <div class="order-products__desc">1003 кг.</div>
+                                            </div>
+                                            <div class="order-products__item">
+                                                <div class="order-products__title">Скидка:</div>
+                                                <div class="order-products__desc _red">0 ₽</div>
+                                            </div>
+                                            <div class="order-products__item _sum">
+                                                <div class="order-products__title">Итого:</div>
+                                                <div class="order-products__desc">179 957 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <fieldset class="fg cart-order__comment">
+                                        <textarea placeholder="Комментарий к заказу"></textarea>
+                                    </fieldset>
+                                    <div class="cart-order__bottom _pt0">
+                                        <div class="cart-order__radios">
+                                            <div class="m-radio">
+                                                <input type="radio" name="payment">
+                                                <label><span>Оплата при получении</span></label>
+                                            </div>
+                                            <div class="m-radio">
+                                                <input checked type="radio" name="payment">
+                                                <label><span>Онлайн оплата</span></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-check">
+                                            <input checked type="checkbox">
+                                            <label>
+                                                <span>
+                                                Я согласен на обработку персональных данных в соответствии с <a
+                                                    href="">политикой конфиденциальности</a>
+                                            </span>
+                                            </label>
+                                        </div>
+                                        <button class="cart-order__btn m-btn m-btn-black">
+                                            <span>Оформить заказ</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -766,7 +848,7 @@
                                     <div class="swiper-slide">
                                         <div class="promo-card">
                                             <a href="" class="promo-card__top m-backdrop">
-                                                <div class="promo-card__img">
+                                                <div class="promo-card__img _scale-img">
                                                     <img src="img/promo.webp" alt="">
                                                 </div>
                                                 <div class="promo-card__title">
@@ -793,7 +875,7 @@
                                     <div class="swiper-slide">
                                         <div class="promo-card">
                                             <a href="" class="promo-card__top m-backdrop">
-                                                <div class="promo-card__img">
+                                                <div class="promo-card__img _scale-img">
                                                     <img src="img/promo2.webp" alt="">
                                                 </div>
                                                 <div class="promo-card__title">
@@ -820,7 +902,7 @@
                                     <div class="swiper-slide">
                                         <div class="promo-card">
                                             <a href="" class="promo-card__top m-backdrop">
-                                                <div class="promo-card__img">
+                                                <div class="promo-card__img _scale-img">
                                                     <img src="img/promo3.webp" alt="">
                                                 </div>
                                                 <div class="promo-card__title">
@@ -847,7 +929,7 @@
                                     <div class="swiper-slide">
                                         <div class="promo-card">
                                             <a href="" class="promo-card__top m-backdrop">
-                                                <div class="promo-card__img">
+                                                <div class="promo-card__img _scale-img">
                                                     <img src="img/promo4.webp" alt="">
                                                 </div>
                                                 <div class="promo-card__title">
@@ -874,7 +956,7 @@
                                     <div class="swiper-slide">
                                         <div class="promo-card">
                                             <a href="" class="promo-card__top m-backdrop">
-                                                <div class="promo-card__img">
+                                                <div class="promo-card__img _scale-img">
                                                     <img src="img/promo.webp" alt="">
                                                 </div>
                                                 <div class="promo-card__title">
